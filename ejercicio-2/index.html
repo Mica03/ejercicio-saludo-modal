@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Bootstrap</title>
+    <link rel="stylesheet" href="./assets/scss/proyecto.css">
+</head>
+<body>
+    <h1>hola</h1>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>hola</h1>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quos non incidunt doloribus excepturi. Aspernatur porro saepe, omnis corporis, voluptas architecto excepturi minima eaque at harum illo, adipisci explicabo eius.</p>
+
+                <!-------CARRUSEL------->
+                <div id="miCarrusel" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://picsum.photos/id/237/800/300" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://picsum.photos/id/26/800/300" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://picsum.photos/id/24/800/300" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#miCarrusel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#miCarrusel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <!-- Button trigger modal -->
+                <!-----data-bd-target es el atributo que llama al identificador que va a abrir-->
+                <!-----data-bs-toggle es el atributo que me dice que componente voy a ejecutar-abrir-->
+                
+                <!--Agregar un -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ventanaEmergente" data-titulo="holi" data-contenido="Esto es un texto que ira dentro del cuerpo modal">
+                  Boton que abre una ventana emergente
+                </button>
+
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#ventanaEmergente" data-titulo="Peligro" data-contenido="ay no peligro peligro">
+                  Boton Peligro
+                </button>
+
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#ventanaEmergente" data-titulo="Saludo Bastian" data-contenido="Hola Bastian">
+                  Saludo Bastian
+                </button>
+
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#ventanaEmergente" data-titulo="Saludo Efren" data-contenido="Hola Efren">
+                  Saludo Efren
+                </button>
+
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#ventanaEmergente" data-titulo="Saludo John" data-contenido="hola John">
+                  Saludo John
+                </button>
+
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#ventanaEmergente" data-titulo="Saludo Jo" data-contenido="hola Jo ">
+                  Saludo Jo
+                </button>
+
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ventanaEmergente" data-titulo="Saludo Natalia" data-contenido="hola Natalia">
+                  Saludo Natalia
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="ventanaEmergente" tabindex="-1" aria-labelledby="tituloModal" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="tituloModal">Ejemplo de modal</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Boton que hace nada</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                
+            </div>
+            
+        </div>
+    </div>
+    <script src="./assets/bootstrap-5.3.3/dist/js/bootstrap.js"></script>
+    
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
